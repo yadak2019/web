@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="logo.png" style="border-radius: 50%;" type="img/x-icon">
+
+
+
+<head>
+    <link rel="stylesheet" href="practice.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <nav>
+        <label>B/W</label>
+        <div class="close" id="all">
+            <a href="javascript:void(0)" id="cccl" onclick="closeNav()">&times;</a>
+            <p><a class="close-content" href="index.html">Home</a></p>
+            <p><a style="background-color: white;color: black;" class="close-content" href="contact.html">Contact</a></p>
+            <p><a class="close-content" href="about.html">About</a></p>
+            <p><a class="close-content" href="about.html">Blog</a></p>
+            <p>
+                <a class="close-content" href="searchengine.html">Sarch Engine</a>
+            </p>
+
+        </div>
+        <span style="color:white;float:right;margin-right:25px;font-size: 30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    </nav>
+
+
+
+
+
+    <main>
+        <h1>Contact us</h1>
+
+        <div class="container">
+            <div class="box">
+                <strong>VIA Email-Address</strong>
+                <p>
+                    <p style="font-size: 10px;"><br></p>
+                    You can contact me or send me a message on my e-mail address <a href="mailto:linusyadak@gmail.com">linusyadak@gmail.com</a>
+                </p>
+
+            </div>
+            <div class="box"><strong>VIA Phone/Whatsapp</strong>
+                <p>
+                    Call me at <a href="tel:+2349052319301">09052319301</a> or Whatsapp me on the same number
+                </p>
+            </div>
+            <div class="box"><strong>VIA Message</strong>
+                <p>You can send me a message aid i will get back to you</p>
+                <p><button id="koll" onclick="openBut()">Send Me Message</button></p>
+            </div>
+        </div>
+
+        <div id="popupform">
+            <button style="font-size: 50px;color: red;" onclick="closeBut()">&times</button>
+            <form name="email" action="email.php" onsubmit="return noneLetter()" method="post" d="popupform">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name="Firstname" id="first" placeholder="Input Your First Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="Lastname" id="last" placeholder="Input Your Last Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" name="Phonenumber" id="phone" placeholder="Input Your Phone Number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" name="Emailaddress" id="phone" placeholder="Input Your Emailaddress">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea name="mail" id="maillist" cols="30" rows="10" placeholder="Input Your Message Here"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="sumb" type="submit" value="submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+
+
+    </main>
+    <audio src="whitenoise.mp3" autoplay></audio>
+
+
+</body>
+
+</html>
+<script src="output.js">
+    function closeNav() {
+        document.getElementById("all").style.height = "0%"
+    }
+
+    function openNav() {
+        document.getElementById("all").style.height = "100%"
+    }
+</script>
+<script>
+    function openBut() {
+        document.getElementById("popupform").style.display = "block"
+    }
+
+    function closeBut() {
+        document.getElementById("popupform").style.display = "none"
+    }
+</script>
+<script>
+    function noneLetter() {
+        var x = document.forms['email']['Firstname'].value;
+        if (x == "") {
+            alert("First name empty");
+            return false;
+        }
+    }
+
+    function noLetter() {
+        var x = document.forms['email']['Lastname'].value;
+        if (x == "") {
+            alert("Last name empty");
+            return false;
+        }
+
+        function noLetter() {
+            var x = document.forms['email']['phonenumber'].value;
+            if (x == "") {
+                alert("Phone Number empty")
+            }
+        }
+    }
+</script>

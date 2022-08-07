@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="practice.css">
+    <link rel="stylesheet" href="practice2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+
+<body>
+    <nav>
+        <label>B/W</label>
+        <div class="close" id="all">
+            <a href="javascript:void(0)" id="cccl" onclick="closeNav()">&times;</a>
+            <p><a class="close-content" href="index.html">Home</a></p>
+            <p><a class="close-content" href="contact.html">Contact</a></p>
+            <p><a class="close-content" href="about.html">About</a></p>
+            <p><a style="background-color: white;color: black;" class="close-content" href="blog.html">Blog</a></p>
+            <p>
+                <a class="close-content" href="searchengine.html">Search Engine</a>
+            </p>
+
+        </div>
+        <span style="color:white;float:right;margin-right:25px;font-size: 30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    </nav>
+
+</body>
+<script src="output.js">
+    function closeNav() {
+        document.getElementById("all").style.width = "0%"
+    }
+
+    function openNav() {
+        document.getElementById("all").style.width = "100%"
+    }
+</script>
+
+</html>
+<abbr title=""></abbr>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="logo.png" style="border-radius: 50%;" type="img/x-icon">
+
+
+
+<head>
+    <link rel="stylesheet" href="practice.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+
+<body>
+    <nav>
+        <label>B/W</label>
+        <div class="close" id="all">
+            <a href="javascript:void(0)" id="cccl" onclick="closeNav()">&times;</a>
+            <p><a class="close-content" href="index.html">Home</a></p>
+            <p><a class="close-content" href="contact.html">Contact</a></p>
+            <p><a style="background-color: white;color: black;" class="close-content" href="about.html">About</a></p>
+            <p><a class="close-content" href="galery.html">Galery</a></p>
+            <p><a class="close-content" href="blog.html">Blog</a></p>
+            <p>
+                <a class="close-content" href="searchengine.html">Search Engine</a>
+            </p>
+
+        </div>
+        <span class="opnavbut" style="color:white;float:right;margin-right:25px;font-size: 30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+    </nav>
+
+    <main>
+        <h1>
+            Welcome to my About page
+        </h1>
+        <h3>
+            In this page you will learn all you need to know about B/W
+        </h3>
+
+        <h2>CEO's Story</h2>
+        <img src="microphone.jpg" alt="microphone" width="100%">
+        <p>
+            <div>
+                I Yadak Linus had a very hard time deciding, what I would become in future but I know I was passionate for any thin Computer I would Talk about Being a pilot, computer engineer, etc. but i wanted to start program I started with python from an online class
+                called Zuri Board Where I Started to Learn it, Then I skipped it and went to php I don’t Know how I came to website development but I loved it when I started a class (not online) on php but what he mostly thought us was html but we named
+                our pages with a .php he also thought us inline CSS later I learnt that CSS was more than inline we have three types so I picked the external CSS and I started working with it and I could Say that external is more better than in line so
+                you may be asking of my age I am only 14 years old practically 15.
+            </div>
+        </p>
+        <span class="bothof">
+            <div class="all">
+                <img src="concert.jpg" alt="concert" width="100%">
+            </div>
+            <div class="all">
+                <img src="iphone.jpg" alt="iphone" width="100%">
+            </div>
+        </span>
+    </main>
+    <audio src="whitenoise.mp3" autoplay></audio>
+    <footer>
+        <ol>
+            <em>
+                This Webpage Was brought To you By
+                Yadak Linus COE of Black and White Coperation
+                &copy; Copyright 2021</em>
+        </ol>
+    </footer>
+</body>
+
+</html>
+<script src="output.js">
+    function closeNav() {
+        document.getElementById("all").style.width = "0%"
+    }
+
+    function openNav() {
+        document.getElementById("all").style.width = "100%"
+    }
+</script>

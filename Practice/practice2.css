@@ -1,0 +1,47 @@
+.top {
+    font-size: 50px;
+    animation-name: colour;
+    animation-fill-mode: none;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#news {
+    text-align: center;
+}
+
+#news .mainleft {
+    float: left;
+    width: 47%;
+}
+
+#news .mainright {
+    float: right;
+    width: 47%;
+}
+
+#news .topic {
+    font-size: 30px;
+}
+
+.wods {
+    text-align: justify;
+}
+
+@keyframes colour {
+    from {
+        color: black;
+    }
+    to {
+        color: white;
+    }
+}
+
+@media(max-width:800px) {
+    #news .mainright {
+        display: none;
+    }
+    #news .mainleft {
+        width: 100%;
+    }
+}
